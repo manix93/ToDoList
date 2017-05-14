@@ -1,6 +1,13 @@
 module Menu
+  def welcome
+    'Welcome to ToDoList!'
+  end
+
   def menu
-    'Welcome to ToDoList!\nChoose what you want to do\n1) Add\n2) Show\nQ) Quit the program.'
+    'Choose what you want to do
+      1) Add
+      2) Show
+      Q) Quit the program.'
   end
 
   def show
