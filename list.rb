@@ -4,4 +4,8 @@ class List
   def initialize
     @all_tasks = []
   end
+
+  def add(task)
+    @all_tasks << task
+  end
 end
