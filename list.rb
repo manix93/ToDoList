@@ -8,4 +8,8 @@ class List
   def add(task)
     @all_tasks << task
   end
+
+  def show()
+    all_tasks
+  end
 end
