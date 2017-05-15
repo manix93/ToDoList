@@ -10,7 +10,7 @@ class List
   end
 
   def show
-    all_tasks
+    all_tasks.map.with_index { |task, i| "#{i.next}): #{task}" }
   end
 
   def write_to_file(filename = 'defaultFilename')
