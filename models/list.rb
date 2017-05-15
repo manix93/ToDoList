@@ -13,11 +13,11 @@ class List
     all_tasks
   end
 
-  def write_to_file(filename)
+  def write_to_file(filename = 'defaultFilename')
     IO.write(filename, @all_tasks.map(&:to_s).join("\n"))
   end
 
-  def read_from_file(filename)
+  def read_from_file(filename = 'defaultFilename')
     IO.readlines(filename).each do |line|
       add(Task.new(line.chomp))
     end
