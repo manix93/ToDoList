@@ -13,6 +13,10 @@ class List
     all_tasks.map.with_index { |task, i| "#{i.next}): #{task}" }
   end
 
+  def delete(number)
+    all_tasks.delete_at(number - 1)
+  end
+
   def write_to_file(filename = 'defaultFilename')
     IO.write(filename, @all_tasks.map(&:to_s).join("\n"))
   end
