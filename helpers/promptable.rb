@@ -4,9 +4,4 @@ module Promptable
     print symbol
     gets.chomp
   end
-
-  def getTask
-    puts 'Write task below:'
-    print ':> '
-  end
 end
