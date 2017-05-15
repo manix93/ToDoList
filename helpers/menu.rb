@@ -8,6 +8,7 @@ module Menu
       1) Add
       2) Show
       3) Write to a file
+      4) Read from file
       Q) Quit the program.'
   end
 

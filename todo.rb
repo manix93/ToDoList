@@ -16,6 +16,7 @@ loop do
   when '1' then my_list.add(prompt('Write task below'))
   when '2' then puts my_list.show
   when '3' then my_list.write_to_file(prompt('Put filename'))
+  when '4' then my_list.read_from_file(prompt('Put filename'))
   else puts 'Wrong choose'
   end
 end
