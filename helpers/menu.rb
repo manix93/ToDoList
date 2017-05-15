@@ -7,6 +7,7 @@ module Menu
     'Choose what you want to do
       1) Add
       2) Show
+      3) Write to a file
       Q) Quit the program.'
   end
 

@@ -12,4 +12,8 @@ class List
   def show
     all_tasks
   end
+
+  def write_to_file(filename)
+    IO.write(filename, @all_tasks.map(&:to_s).join("\n"))
+  end
 end
