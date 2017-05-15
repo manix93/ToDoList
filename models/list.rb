@@ -9,7 +9,7 @@ class List
     @all_tasks << task
   end
 
-  def show()
+  def show
     all_tasks
   end
 end
